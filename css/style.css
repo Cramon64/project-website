@@ -18,3 +18,33 @@
     justify-content: space-between;
     gap: 40px;
 }
+
+/* flex: 1; means to grow and fill the available space equally */
+/* If I add the below block, 'another scroll-topper moves to the left close to the image*/
+/* #text1, #text2 {
+    flex: 1;
+} */
+
+/* #row1 img, #row2 img {
+    width: 300px;
+    border-radius: 12px;
+} */
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
