@@ -16,7 +16,7 @@
 
         <div class="button-row">
             <button id="about-btn" class="btn">About Me</button>
-            <button id="chat-toggle" class="btn">Chat Bot</button>
+            <button id="contact-me" class="btn">Contact</button>
         </div>
     </main>
 
@@ -65,10 +65,31 @@
         </div>
     </section>
 
-    <footer>
-        <!-- Put the footer in here, I can add a nav bar with things like feature, learn more, support, contact me
-         etc., but there is no need for that at the moment. -->
-    </footer>
+    <!-- This is the ENTIRE chat container for the bot as a whole -->
+    <div id="chat-bot">
+        <button id="chat-toggle">
+            <img src="images/chatbot.png">
+        </button>
+
+        <!-- This is for the actual box that pops up. Starts 'hidden' the will toggle show/hide when clicked-->
+        <div id="chat-container" class="hidden">
+            <button id="close-chat">✖</button>
+
+    <!-- This is the window where all the messages will appear -->
+    <div id="chat-box"></div>
+
+            <!-- This is where the text input from the user will go -->
+            <div id="chat-input-field">
+                <!-- This indicates a text type input, assigns an id to it, and gives placeholder text for the input field -->
+                <input type="text" id="chat-input" placeholder="Ask me anything!"/>
+
+                <!-- This is the 'send' button for the user to send their input to the bot -->
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="scripts/chatbot.js"></script>
 </body>
 
 </html>

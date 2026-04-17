@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -90,4 +94,139 @@ button {
 
 .btn:hover {
     background-color: #555;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+#chat-bot {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    width: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#chat-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#chat-toggle img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+#chat-toggle:hover {
+    transform: scale(1.05);
+}
+
+#chat-toggle:active {
+    transform: scale(0.95);
+}
+
+#close-chat {
+    align-self: flex-end;
+    /* Can select a color for the button later*/
+    /* background-color: #a507d4; */ 
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    width: 250px;
+    height: 350px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Sometimes, display: flex; will override .hidden depending on order/specificity so I added !important and that seems to have fixed the toggle.*/
+.hidden {
+    display: none !important;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* spacing between messages */
+}
+
+#chat-input-field {
+  display: flex;          /* Input + button sit next to each other */
+  border-top: 1px solid #ccc;
+  padding: 5px; /* optional: smaller padding to fit */
+  background-color: #fff; /* keeps input visible */
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px; /* smaller padding if needed */
+    font-size: 10px; /* adjustable text size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    max-width: 158px;
+}
+
+#send-btn {
+    padding: 8px 12px; /* fits the smaller window */
+    margin-left: 5px; /* small gap from input */
+    font-size: 14px; /* adjustable text size */
+    background-color: #7a7676;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.message {
+    max-width: 60%; /* prevents messages from spanning full width */
+    padding: 10px 15px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    font-size: 12px; /* adjust smaller or larger as you like */
+}
+
+/* Bot messages on the left */
+.message.bot {
+    align-self: flex-start; /* left side */
+    background-color: #e0e0e0; /* example bot color */
+}
+
+/* User messages on the right */
+.message.user {
+    align-self: flex-end; /* right side */
+    background-color: #8c4ab8; /* example user color */
+    color: white;
 }
