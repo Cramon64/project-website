@@ -10,6 +10,11 @@ main {
     gap: 20px;
 }
 
+#landing-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
 #hero-image {
     display: flex;
     justify-content: center;
@@ -24,6 +29,7 @@ main {
     flex-direction: column;
     gap: 50px;
     padding: 60px;
+    font-family: Arial, sans-serif;
 }
 
 #row1, #row2 {
@@ -51,6 +57,9 @@ main {
 
 #text-section {
     padding: 40px;
+    background-color: #fafafa;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .text-block {
@@ -106,7 +115,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #8c4ab8;
     border: none;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
