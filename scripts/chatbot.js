@@ -12,6 +12,6 @@ chatToggle.addEventListener('click', () => {
 
 closeChat.addEventListener('click', () => {
     chatContainer.classList.add('hidden');
-    chatToggle.style.display = 'block';
+    chatToggle.style.display = 'flex';
 });
 
