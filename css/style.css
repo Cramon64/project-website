@@ -90,6 +90,8 @@ p {
     color: white;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
 .btn:hover {
