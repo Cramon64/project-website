@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
@@ -13,9 +14,7 @@
             <h1>Welcome!</h1>
             <p>My name is Cameron, and I am an aspiring Software Developer. I created this site to hone my skills in HTML, CSS, and Javascript, as well as keep track of other projects.</p>
         </div>
-
         <div class="button-row">
-
             <a class="btn" href="https://youtube.com">About Me</a>
             <!-- <button id="about-btn" class="btn">About Me</button> -->
             <a class="btn">Contact</a>
@@ -31,15 +30,16 @@
         <div id="row1">
             <div id="text1">
                 <h2>What do I like to do in my free time?</h2>
-                <p>I love playing video games with friends, practicing Kendama, and I have been an avid musician for most of my life. I can't imagine living without music!</p>
+                <p>I love playing video games with friends, practicing Kendama, and I have been an avid musician for most of my life. I love playing and going to see live music!</p>
                 <a class="btn">Skills & Hobbies</a>
             </div>
-            <img src="images/gradient-placeholder1.png">
+            <!-- IMPORTANT: Currently this license is copyrighted, I did reach out to the copyright
+                 holder and am trying to get permissions to use. Even if th is doesn't go live I'd 
+                 like to cite appropriately-->
+            <img src="images/bilmuri-photo.jpg">
         </div>
-
         <div id="row2">
             <img src="images/gradient-placeholder2.png">
-
             <div id="text2">
                 <h2>Personal Projects</h2>
                 <p>Things ranging from coding projects, art, music, and other creative ventures I may add to this!</p>
@@ -54,12 +54,10 @@
                 <h2>Big-ish Bold Text here</h2>
                 <p>Smaller grey text here</p>
             </div>
-
             <div class="block">
                 <h2>Big-ish Bold Text here</h2>
                 <p>Smaller grey text here</p>
             </div>
-                
             <div class="block">
                 <h2>Big-ish Bold Text here</h2>
                 <p>Smaller grey text here</p>
@@ -72,19 +70,15 @@
         <button id="chat-toggle">
             <img src="images/chatbot.png">
         </button>
-
         <!-- This is for the actual box that pops up. Starts 'hidden' the will toggle show/hide when clicked-->
         <div id="chat-container" class="hidden">
             <button id="close-chat">✖</button>
-
     <!-- This is the window where all the messages will appear -->
     <div id="chat-box"></div>
-
             <!-- This is where the text input from the user will go -->
             <div id="chat-input-field">
                 <!-- This indicates a text type input, assigns an id to it, and gives placeholder text for the input field -->
                 <input type="text" id="chat-input" placeholder="Ask me anything!"/>
-
                 <!-- This is the 'send' button for the user to send their input to the bot -->
                 <button id="send-btn">Send</button>
             </div>
