@@ -22,3 +22,12 @@ input {
     display: inline-block;
     text-decoration: none;
 }
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
