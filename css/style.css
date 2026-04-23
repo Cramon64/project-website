@@ -24,7 +24,7 @@ main {
 
 /*  display: flex; turns the container into a layout system.
     Normally, divs stack by default. With flex, you gain control of alignment. */
-#featured-section {
+#featured-section, #project-section  {
     display: flex;
     flex-direction: column;
     gap: 50px;
