@@ -31,21 +31,21 @@ main {
     padding: 60px;
 }
 
-#row1, #row2 {
+#row1, #row2, #row3 {
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
-#text1, #text2, #row1 img, #row2 img {
+#text1, #text2, #row1 img, #row2 img, #row3 img {
     flex: 1;
 }
 
-#text1, #text2 {
+#text1, #text2, #text3 {
     padding: 20px;
 }
 
-#row1 img, #row2 img {
+#row1 img, #row2 img, #row3 img {
     width: 100%;
     max-width: 400px;
     height: 250px;

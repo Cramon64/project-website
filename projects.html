@@ -36,4 +36,38 @@
                 <a class="btn" href="mpg-app.html">View MPG Calculator</a>
             </div>
         </div>
+
+        <div id="row3">
+            <img src="images/ai-chatbot.jpg">
+            <div id="text3">
+                <h2>OpenAI Chatbot</h2>
+                <p>I have worked to implement a usable chatbot on this site that can take responses and process using OpenAI resources. Check it out in the lower right corner!</p>
+                <!-- <a class="btn" href="mpg-app.html">View MPG Calculator</a> -->
+            </div>
+        </div>
     </section>
+
+    <!-- This is the ENTIRE chat container for the bot as a whole -->
+    <div id="chat-bot">
+        <button id="chat-toggle">
+            <img src="images/chatbot.png">
+        </button>
+        <!-- This is for the actual box that pops up. Starts 'hidden' the will toggle show/hide when clicked-->
+        <div id="chat-container" class="hidden">
+            <button id="close-chat">✖</button>
+        <!-- This is the window where all the messages will appear -->
+        <div id="chat-box"></div>
+            <!-- This is where the text input from the user will go -->
+            <div id="chat-input-field">
+                <!-- This indicates a text type input, assigns an id to it, and gives placeholder text for the input field -->
+                <input type="text" id="chat-input" placeholder="Ask me anything!"/>
+                <!-- This is the 'send' button for the user to send their input to the bot -->
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/chatbot.js"></script>
+</body>
+
+</html>
